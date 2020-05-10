@@ -42,7 +42,7 @@ function draw() {
 }
 
 
-// -------------------------  Sound Setup -------------------------------
+// -------------------------  Sound Setup ------------------------------
 
 function getNewSoundData(freqType) {
   return map(fft.getEnergy(freqType), 0, 255, 0, 1); //get energy from frequency, scaled from 0 to 1
