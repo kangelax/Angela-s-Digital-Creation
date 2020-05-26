@@ -1,0 +1,464 @@
+body {
+    min-width: 500px;
+    min-height: 313px;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+#background {
+    min-width: 500px;
+    min-height: 313px;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    overflow: hidden;
+    background-image: url(Assets/Background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    bottom: 0%;
+    z-index: -10;
+}
+
+#title1 {
+    visibility: visible;
+    position: absolute;
+    background-image: url(Assets/Title1.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    min-width: 295px;
+    min-height: 89px;
+    width: 100vmin;
+    height: 21vmin;
+    bottom: 55%;
+    right: 25%;
+    transform: rotate(-5deg);
+    z-index: 23;
+}
+
+#title2 {
+    visibility: visible;
+    position: absolute;
+    background-image: url(Assets/Title2.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    min-width: 295px;
+    min-height: 89px;
+    width: 100vmin;
+    height: 21vmin;
+    top: 57%;
+    left: 25%;
+    transform: rotate(5deg);
+    z-index: 23;
+}
+
+#startGameBG {
+    visibility: visible;
+    position: absolute;
+    background-image: url(Assets/StartBackground.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    bottom: 0%;
+    z-index: 21;
+}
+
+#introAnimation {
+    visibility: visible;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #6E4FA0;
+    bottom: 0%;
+    z-index: 19;
+}
+
+#tutorial {
+    visibility: visible;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #6E4FA0;
+    bottom: 0%;
+    z-index: 18;
+}
+
+#gameEnd {
+    visibility: hidden;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #6E4FA0;
+    bottom: 0%;
+    z-index: 19;
+    opacity: 0;
+}
+
+#startPlay {
+    position: absolute;
+    background-image: url(Assets/Buttons/Play.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    min-width: 87px;
+    min-height: 87px;
+    width: 30vh;
+    height: 30vh;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    cursor: pointer;
+    z-index: 22;
+}
+
+#replay {
+    visibility: hidden;
+    position: absolute;
+    background-image: url(Assets/Buttons/Play.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    min-width: 87px;
+    min-height: 87px;
+    width: 30vh;
+    height: 30vh;
+    left: 50%;
+    top: 65%;
+    transform: translateX(-50%) translateY(-50%);
+    cursor: pointer;
+    z-index: 22;
+}
+
+#home {
+    position: absolute;
+    background-image: url(Assets/Buttons/Home.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    left: 2vw;
+    top: 2vw;
+    min-width: 50px;
+    min-height: 50px;
+    width: 5vw;
+    height: 5vw;
+    max-width: 90px;
+    max-height: 90px;
+    cursor: pointer;
+}
+
+#skipVid {
+    position: absolute;
+    background-image: url(Assets/Buttons/Skip.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    right: 2vw;
+    top: 2vw;
+    min-width: 50px;
+    min-height: 50px;
+    width: 5vw;
+    height: 5vw;
+    max-width: 90px;
+    max-height: 90px;
+    cursor: pointer;
+    z-index: 20;
+}
+
+#downloadSite {
+    position: absolute;
+    background-image: url(Assets/Buttons/Download.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    right: 2vw;
+    top: 2vw;
+    min-width: 50px;
+    min-height: 50px;
+    width: 5vw;
+    height: 5vw;
+    max-width: 90px;
+    max-height: 90px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+#downloadMe {
+    visibility: hidden;
+    position: absolute;
+    right: 2vw;
+    top: 8vw;
+    width: 11vw;
+    height: 3vw;
+    z-index: 10;
+    background-image: url(Assets/DownloadMe.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#downloadSite:hover + #downloadMe{
+    visibility: visible;
+}
+
+#muteAudio {
+    position: absolute;
+    background-size: contain;
+    background-repeat: no-repeat;
+    right: 8vw;
+    top: 2vw;
+    min-width: 50px;
+    min-height: 50px;
+    width: 5vw;
+    height: 5vw;
+    max-width: 90px;
+    max-height: 90px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+#number {
+    position: absolute;
+    min-width: 50px;
+    min-height: 50px;
+    width: 33vmin;
+    height: 33vmin;
+    left: 35%;
+    bottom: 60%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 15;
+    animation: float1 5s linear infinite;
+}
+
+@keyframes float1 {
+	0% {transform: translatex(0px) translatey(0px);}
+	25% {transform: translatex(-10px) translatey(-2px);}
+	50% {transform: translatex(0px) translatey(0px);}
+	75% {transform: translatex(10px) translatey(-2px);}
+	100% {transform: translatex(0px) translatey(0px);}
+}
+
+@keyframes float2 {
+	0% {transform: translatex(0px) translatey(0px);}
+	25% {transform: translatex(10px) translatey(-2px);}
+	50% {transform: translatex(0px) translatey(0px);}
+	75% {transform: translatex(-10px) translatey(-2px);}
+	100% {transform: translatex(0px) translatey(0px);}
+}
+
+#fruit1 {
+    position: absolute;
+    min-width: 130px;
+    min-height: 65px;
+    width: 34vmin;
+    height: 17vmin;
+    z-index: 16;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#fruitContainer1 {
+    position: absolute;
+    min-width: 130px;
+    min-height: 65px;
+    width: 34vmin;
+    height: 17vmin;
+    bottom: 66%;
+    left: 11%;
+    z-index: 15;
+    background-image: url(Assets/Fruits/1cloud.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    animation: float2 5s linear infinite;
+}
+
+#fruit2 {
+    position: absolute;
+    min-width: 140px;
+    min-height: 70px;
+    width: 34vmin;
+    height: 17vmin;
+    z-index: 16;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#fruitContainer2 {
+    position: absolute;
+    min-width: 140px;
+    min-height: 70px;
+    width: 34vmin;
+    height: 17vmin;
+    bottom: 46%;
+    left: 24%;
+    z-index: 15;
+    background-image: url(Assets/Fruits/2cloud.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    animation: float2 5s linear infinite;
+}
+
+#fruit3 {
+    position: absolute;
+    min-width: 120px;
+    min-height: 60px;
+    width: 34vmin;
+    height: 17vmin;
+    z-index: 16;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#fruitContainer3 {
+    position: absolute;
+    min-width: 120px;
+    min-height: 60px;
+    width: 34vmin;
+    height: 17vmin;
+    bottom: 27%;
+    left: 9%;
+    z-index: 15;
+    background-image: url(Assets/Fruits/3cloud.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    animation: float1 5s linear infinite;
+}
+
+.jelly {
+    position: absolute;
+    width: 38vmin;
+    height: 28vmin;
+    bottom: 7%;
+    right: 30%;
+}
+
+@keyframes happyJelly {
+    0% {transform: translatex(0px) translatey(0px) scaleY(1) rotate(0deg);}
+	25% {transform: translatex(-5px) translatey(-30px) scaleY(1.05) rotate(-3deg);}
+	50% {transform: translatex(0px) translatey(0px) scaleY(1) rotate(0deg);}
+	75% {transform: translatex(5px) translatey(-30px) scaleY(1.05) rotate(3deg);}
+	100% {transform: translatex(0px) translatey(0px) scaleY(1) rotate(0deg);}
+  }
+
+@keyframes sadJelly {
+    0% {transform: translatex(0px) translatey(0px) scaleY(1) rotate(0deg);}
+	25% {transform: translatex(-5px) translatey(0px) scaleY(0.95) rotate(-2deg);}
+	50% {transform: translatex(0px) translatey(0px) scaleY(1) rotate(0deg);}
+	75% {transform: translatex(5px) translatey(0px) scaleY(0.95) rotate(2deg);}
+	100% {transform: translatex(0px) translatey(0px) scaleY(1) rotate(0deg);}
+  }
+
+#jellyDefault {
+    visibility: visible;
+    position: absolute;
+    background-image: url(Assets/JellyMonster/JellyMonsterDefault.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+
+#jellyHappy {
+    visibility: hidden;
+    position: absolute;
+    background-image: url(Assets/JellyMonster/JellyMonsterHappy.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 2;
+    animation: happyJelly 2s linear infinite;
+    animation-play-state: paused;
+}
+
+#jellySad {
+    visibility: hidden;
+    position: absolute;
+    background-image: url(Assets/JellyMonster/JellyMonsterSad.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 2;
+    animation: sadJelly 2s linear infinite;
+    animation-play-state: paused;
+}
+
+.house {
+    position: absolute;
+    width: 95vmin;
+    height: 74vmin;
+    right: -10%;
+    bottom: 30%;
+}
+
+#step1 {
+    visibility: hidden;
+    position: absolute;
+    background-image: url(Assets/House/1_FrontWall_z3.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 3;
+}
+
+#step2 {
+    visibility: hidden;
+    position: absolute;
+    background-image: url(Assets/House/2_FrontSide_z2.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 2;
+}
+
+#step3 {
+    visibility: hidden;
+    position: absolute;
+    background-image: url(Assets/House/3_BackWall_z1.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+
+#step4 {
+    visibility: hidden;
+    position: absolute;
+    background-image: url(Assets/House/4_FrontRoof_z7.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 7;
+}
+
+#step5 {
+    visibility: hidden;
+    position: absolute;
+    background-image: url(Assets/House/5_BackRoof_z4.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 4;
+}
+
+#step6 {
+    visibility: hidden;
+    position: absolute;
+    background-image: url(Assets/House/6_Door_z8.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 8;
+}
+
+#step7 {
+    visibility: hidden;
+    position: absolute;
+    background-image: url(Assets/House/7_Window1_z5.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 5;
+}
+
+#step8 {
+    visibility: hidden;
+    position: absolute;
+    background-image: url(Assets/House/8_Window2_z6.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 6;
+}
+
+#step9 {
+    visibility: hidden;
+    position: absolute;
+    background-image: url(Assets/House/9_Gloss_z9.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 9;
+}
