@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<html>
+    
+<head>
+    
+    <meta charset="UTF-8"name="viewport" content="width=device-width,  
+        initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <script type="text/javascript" src="script.js"></script>
+    <title>Mr Jelly's New Home</title>
+    
+</head>
+    
+<body>
+    
+<div id="title1"></div>
+<div id="title2"></div>  
+<div id="startGameBG"></div>
+    
+<video id="introAnimation" onended="hideIntro()">
+  <source src="Assets/Video/IntroAnimation.mp4" type="video/mp4">
+</video>
+<video id="tutorial" onended="hideTutorial()">
+  <source src="Assets/Video/Tutorial.mp4" type="video/mp4">
+</video>
+<video id="gameEnd" onended="showButton()">
+  <source src="Assets/Video/EndOfGame.mp4" type="video/mp4">
+</video>
+
+<div id="startPlay" onclick="startPlay()"></div>
+<div id="replay" onclick="reload()"></div>
+    
+<div id="skipVid" onclick="skipVideo()"></div>
+    
+<div id="home" onclick="reload()"></div>
+<div id="muteAudio" onclick="muteAudio()"></div>
+<a id="downloadSite" href="Mr.%20Jelly's%20New%20Home.zip" onclick="downloadSite()" download></a>
+<div id="downloadMe"></div>
+        
+<audio id="correctAnswer" src="Assets/SoundEffect/ChildrenYaySound.mp3"></audio>
+<audio id="wrongAnswer" src="Assets/SoundEffect/ChildrenCryingSound.mp3"></audio>
+
+<audio id="one" src="Assets/SoundEffect/One.mp3"></audio>
+<audio id="two" src="Assets/SoundEffect/Two.mp3"></audio>
+<audio id="three" src="Assets/SoundEffect/Three.mp3"></audio>
+<audio id="four" src="Assets/SoundEffect/Four.mp3"></audio>
+<audio id="five" src="Assets/SoundEffect/Five.mp3"></audio>
+<audio id="six" src="Assets/SoundEffect/Six.mp3"></audio>
+<audio id="seven" src="Assets/SoundEffect/Seven.mp3"></audio>
+<audio id="eight" src="Assets/SoundEffect/Eight.mp3"></audio>
+<audio id="nine" src="Assets/SoundEffect/Nine.mp3"></audio>
+    
+<audio id="backgroundMusic" src="Assets/SoundEffect/BackgroundMusic.mp3" loop="loop" volume="0.5"></audio>
+    
+<div id="jelly" ondrop="onDrop(event)" ondragover="allowDrop(event)" >
+    <div class="jelly" id="jellyHappy"></div>
+    <div class="jelly" id="jellySad"></div>
+    <div class="jelly" id="jellyDefault"></div>
+</div>
+
+<div id="fruitContainer1">
+    <div id="fruit1" draggable="true" ondragstart="dragStart(event)"></div>
+</div>
+
+<div id="fruitContainer2">
+    <div id="fruit2" draggable="true" ondragstart="dragStart(event)"></div>
+</div>
+    
+<div id="fruitContainer3">
+    <div id="fruit3" draggable="true" ondragstart="dragStart(event)"></div>
+</div>
+    
+<div id="background">
+    
+<div id="number"></div>
+    
+<div>
+    <div class="house" id="step1"></div>
+    <div class="house" id="step2"></div>
+    <div class="house" id="step3"></div>
+    <div class="house" id="step4"></div>
+    <div class="house" id="step5"></div>
+    <div class="house" id="step6"></div>
+    <div class="house" id="step7"></div>
+    <div class="house" id="step8"></div>
+    <div class="house" id="step9"></div>
+</div>
+    
+</div>
+    
+</body>
+    
+</html>
