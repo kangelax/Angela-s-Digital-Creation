@@ -1,0 +1,477 @@
+/* style html and body */
+html, body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+    background-color: #00648C;
+}
+
+/* wrapper to centre horizontally */
+#wrapper {
+    width: 1245px;
+    height: 750px;
+    margin-top: 50vh;
+    transform: translateY(-50%);
+}
+
+/* wrapper to centre vertically */
+#wrapperWrapper {
+    width: 1245px;
+    height: 750px;
+    margin-left: 50vw;
+    transform: translateX(-50%);
+}
+
+/* style map image */
+#map {
+    position: absolute;
+    width: 1245px;
+    height: 750px;
+    background-image: url(Assets/map.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -10;
+}
+
+/* style kangaroo image */
+#kangaroo {
+    position: absolute;
+    width: 140px;
+    height: 130px;
+    background-image: url(Assets/EasternGreyKangaroo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    left: 720px;
+    top: 250px;
+    z-index: 10;
+    cursor: pointer;
+}
+
+/* style kangaroo text */
+#kangarooText {
+    font-family: 'Bitter', serif;
+    font-size: 13px;
+    padding: 5px;
+    position: absolute;
+    width: 200px;
+    height: 75px;
+    right: 150px;
+    top: 250px;
+    background: rgba(255, 255, 255, 0.5);
+    z-index: 11;
+    border-radius: 2px;
+}
+
+/* style kangaroo range image */
+#kangarooRange {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(Assets/kangarooRange.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* hide kangaroo text and kangaroo range image */
+.hoverKangaroo {
+    visibility: hidden;
+}
+
+/* show kangaroo text and kangaroo image on hover */
+#kangaroo:hover + .hoverKangaroo {
+    visibility: visible;
+}
+
+/* style koala image */
+#koala {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-image: url(Assets/Koala.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    left: 805px;
+    top: 320px;
+    z-index: 10;
+    cursor: pointer;
+}
+
+/* style koala text */
+#koalaText {
+    font-family: 'Bitter', serif;
+    font-size: 13px;
+    padding: 5px;
+    position: absolute;
+    width: 200px;
+    height: 105px;
+    left: 900px;
+    top: 310px;
+    background: rgba(255, 255, 255, 0.5);
+    z-index: 11;
+    border-radius: 2px;
+}
+
+/* style koala range image */
+#koalaRange {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(Assets/koalaRange.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* hide kangaroo text and kangaroo range image */
+.hoverKoala {
+    visibility: hidden;
+}
+
+/* show kangaroo text and kangaroo image on hover */
+#koala:hover + .hoverKoala {
+    visibility: visible;
+}
+
+/* style emu image */
+#emu {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-image: url(Assets/Emu.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    left: 590px;
+    top: 280px;
+    z-index: 10;
+    cursor: pointer;
+}
+
+/* style emu text */
+#emuText {
+    font-family: 'Bitter', serif;
+    font-size: 13px;
+    padding: 5px;
+    position: absolute;
+    width: 200px;
+    height: 75px;
+    left: 270px;
+    top: 180px;
+    background: rgba(255, 255, 255, 0.5);
+    z-index: 11;
+    border-radius: 2px;
+}
+
+/* style emu range image */
+#emuRange {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(Assets/emuRange.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* hide emu text and kangaroo range image */
+.hoverEmu {
+    visibility: hidden;
+}
+
+/* show emu text and kangaroo image on hover */
+#emu:hover + .hoverEmu {
+    visibility: visible;
+}
+
+/* style platypus image */
+#platypus {
+    position: absolute;
+    width: 130px;
+    height: 100px;
+    background-image: url(Assets/Platypus.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    left: 750px;
+    top: 400px;
+    z-index: 10;
+    cursor: pointer;
+}
+
+/* style platypus text */
+#platypusText {
+    font-family: 'Bitter', serif;
+    font-size: 13px;
+    padding: 5px;
+    position: absolute;
+    width: 200px;
+    height: 90px;
+    left: 900px;
+    top: 420px;
+    background: rgba(255, 255, 255, 0.5);
+    z-index: 11;
+    border-radius: 2px;
+}
+
+/* style platypus range image */
+#platypusRange {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(Assets/platypusRange.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* hide platypus text and kangaroo image on hover */
+.hoverPlatypus {
+    visibility: hidden;
+}
+
+/* show platypus text and kangaroo image on hover */
+#platypus:hover + .hoverPlatypus {
+    visibility: visible;
+}
+
+/* style possum image */
+#possum {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-image: url(Assets/Possum.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    left: 590px;
+    top: 150px;
+    z-index: 10;
+    cursor: pointer;
+}
+
+/* style possum text */
+#possumText {
+    font-family: 'Bitter', serif;
+    font-size: 13px;
+    padding: 5px;
+    font-size: 13px;
+    position: absolute;
+    width: 200px;
+    height: 90px;
+    left: 360px;
+    top: 80px;
+    background: rgba(255, 255, 255, 0.5);
+    z-index: 11;
+    border-radius: 2px;
+}
+
+/* style possum range image */
+#possumRange {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(Assets/possumRange.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* hide possum text and kangaroo image on hover */
+.hoverPossum {
+    visibility: hidden;
+}
+
+/* show kangaroo text and kangaroo image on hover */
+#possum:hover + .hoverPossum {
+    visibility: visible;
+}
+
+/* style wombat image */
+#wombat {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-image: url(Assets/Wombat.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    left: 750px;
+    top: 470px;
+    z-index: 10;
+    cursor: pointer;
+}
+
+/* style wombat text */
+#wombatText {
+    font-family: 'Bitter', serif;
+    font-size: 13px;
+    padding: 5px;
+    position: absolute;
+    width: 200px;
+    height: 75px;
+    left: 875px;
+    top: 480px;
+    background: rgba(255, 255, 255, 0.5);
+    z-index: 11;
+    border-radius: 2px;
+}
+
+/* style wombat range image */
+#wombatRange {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(Assets/wombatRange.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* hide wombat text and kangaroo image on hover */
+.hoverWombat {
+    visibility: hidden;
+}
+
+/* show wombat text and kangaroo image on hover */
+#wombat:hover + .hoverWombat {
+    visibility: visible;
+}
+
+/* style currawong image */
+#currawong {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-image: url(Assets/Currawong.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    left: 745px;
+    top: 556px;
+    z-index: 10;
+    cursor: pointer;
+}
+
+/* style currawong text */
+#currawongText {
+    font-family: 'Bitter', serif;
+    font-size: 13px;
+    padding: 5px;
+    position: absolute;
+    width: 200px;
+    height: 90px;
+    left: 845px;
+    top: 550px;
+    background: rgba(255, 255, 255, 0.5);
+    z-index: 11;
+    border-radius: 2px;
+}
+
+/* style currawong range image */
+#currawongRange {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(Assets/currawongRange.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* hide currawong text and kangaroo image on hover */
+.hoverCurrawong {
+    visibility: hidden;
+}
+
+/* show currawong text and kangaroo image on hover */
+#currawong:hover + .hoverCurrawong {
+    visibility: visible;
+}
+
+/* style cockatoo image */
+#cockatoo {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-image: url(Assets/CarnabysBlackCockatoo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    left: 410px;
+    top: 425px;
+    z-index: 10;
+    cursor: pointer;
+}
+
+/* style cockatoo text */
+#cockatooText {
+    font-family: 'Bitter', serif;
+    font-size: 13px;
+    padding: 5px;
+    position: absolute;
+    width: 200px;
+    height: 75px;
+    left: 185px;
+    top: 430px;
+    background: rgba(255, 255, 255, 0.5);
+    z-index: 11;
+    border-radius: 2px;
+}
+
+/* style cockatoo range image */
+#cockatooRange {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(Assets/cocaktooRange.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* hide cockatoo text and kangaroo image on hover */
+.hoverCockatoo {
+    visibility: hidden;
+}
+
+/* show cockatoo text and kangaroo image on hover */
+#cockatoo:hover + .hoverCockatoo {
+    visibility: visible;
+}
+
+/* style kookaburra image */
+#kookaburra {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-image: url(Assets/Kookaburra.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    left: 725px;
+    top: 170px;
+    z-index: 10;
+    cursor: pointer;
+}
+
+/* style kookaburra text */
+#kookaburraText {
+    font-family: 'Bitter', serif;
+    font-size: 13px;
+    padding: 5px;
+    position: absolute;
+    width: 200px;
+    height: 90px;
+    left: 835px;
+    top: 165px;
+    background: rgba(255, 255, 255, 0.5);
+    z-index: 11;
+    border-radius: 2px;
+}
+
+/* style kookaburra range image */
+#kookaburraRange {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(Assets/kookaburraRange.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* hide kookaburra text and kangaroo image on hover */
+.hoverKookaburra {
+    visibility: hidden;
+}
+
+/* show kookaburra text and kangaroo image on hover */
+#kookaburra:hover + .hoverKookaburra {
+    visibility: visible;
+}
